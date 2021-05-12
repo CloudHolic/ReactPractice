@@ -12,7 +12,7 @@ export class Button extends React.Component {
 
 export class Link extends React.Component {
     render() {
-        return <a onClick={this.props.handleClick} href="#">{this.props.label}</a>
+        return <a onClick={this.props.handleClick} href="http://www.naver.com">{this.props.label}</a>
     }
 }
 
