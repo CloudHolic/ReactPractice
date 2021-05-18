@@ -1,4 +1,19 @@
 {
+  "name": "email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -w",
+    "wds-cli": "./node_modules/.bin/webpack-dev-server --inline --hot --module-bind 'css=style-loader!css-loader'  --module-bind 'jsx=react-hot-loader!babel-loader' --config webpack.dev-cli.config.js",
+    "wds": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js"
+  },
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
   "dependencies": {
     "bootstrap": "^5.0.1",
     "react": "^17.0.2",
